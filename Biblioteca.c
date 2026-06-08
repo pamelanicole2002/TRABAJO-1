@@ -74,7 +74,7 @@ void visualizarCatalogo() {
         return;
     }
 
-    printf("\n=================== CATÁLOGO GENERAL ===================\n");
+    printf("\nCATÁLOGO GENERAL\n");
 
     for (int i = 0; i < totalRegistros; i++) {
 
@@ -85,7 +85,7 @@ void visualizarCatalogo() {
         printf("Anio    : %d\n", catalogo[i].fechaPublicacion);
         printf("Estado : %s\n", catalogo[i].disponibilidad);
 
-        printf("--------------------------------------\n");
+        printf("\n");
     }
 }
 
@@ -102,7 +102,7 @@ void consultarLibro() {
 
         if (catalogo[i].codigo == codigoBuscado) {
 
-            printf("\n===== INFORMACION DEL LIBRO =====\n");
+            printf("\nINFORMACION DEL LIBRO\n");
             printf("Titulo : %s\n", catalogo[i].nombreLibro);
             printf("Autor  : %s\n", catalogo[i].escritor);
             printf("Anio    : %d\n", catalogo[i].fechaPublicacion);
@@ -180,9 +180,9 @@ int main() {
 
     do {
 
-        printf("\n=====================================\n");
+        printf("\n\n");
         printf("   SISTEMA DE GESTIÓN BIBLIOTECARIA\n");
-        printf("=====================================\n");
+        printf("\n");
         printf("1. Incorporar libro\n");
         printf("2. Ver catalogo\n");
         printf("3. Consultar libro\n");
